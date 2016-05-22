@@ -1,0 +1,100 @@
+a { text-decoration: none; }
+
+a:focus { outline: 0; }
+
+body { font-family: "Open Sans",  sans-serif; color: #ebebeb; font-stretch: semi-condensed; }
+
+.container { max-width: 965px; }
+
+.over { background: #2e3f4f; }
+
+.wrapped { max-width: 720px; margin: 0 auto; }
+
+.navbar-brand { height: auto; padding: 10px 15px; margin-left: 10%; letter-spacing: -0.8px; }
+
+.navbar-collapse .navbar-right { margin-right: 12%; }
+
+.dropdown-toggle { padding: 10px 0 10px 33px; font-size: 11px; }
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { border-color: transparent; }
+
+header { background: #4e5d6c; }
+header a { color: #ebebeb; }
+header a:hover { color: #ebebeb; }
+header .navbar-toggle .icon-bar { color: #ebebeb; background-color: #ebebeb; }
+header .navbar-brand { font-size: 20px; }
+header .nav li a { padding: 11px 16px 9px 16px; font-size: 12px; letter-spacing: -0.8px; }
+header .nav li a:hover { background: #485563; color: #ebebeb; }
+header .navbar-right .dropdown-menu { background: #4e5d6c; box-shadow: none; border: none; }
+header .navbar-right .dropdown-menu .bordered { border-top: 1px solid #2e3f4f; }
+header .navbar-right .dropdown-menu a { color: #ebebeb; }
+header .navbar-right .dropdown-menu a span { margin-left: 5px; }
+
+section h2 { padding: 43px 0 21px; border-bottom: 1px solid #4e5d6c; letter-spacing: -0.8pt; font-size: 31px; }
+
+section.chart .chartBloks { padding-top: 13px; }
+section.chart .chartBloks .c100 { float: none; margin: 0 auto 7px auto; }
+section.chart .chartBloks .c100:hover { margin: 0 auto; }
+section.chart .chartBloks p { font-size: 20px; text-align: center; letter-spacing: -1pt; }
+
+section.sales h2 { padding-top: 16px; }
+section.sales .table-over { overflow-y: auto; width: 100%; overflow: auto; margin: 22px 0 0 0; }
+section.sales .table-over::-webkit-scrollbar { -webkit-appearance: none; width: 14px; height: 14px; }
+section.sales .table-over ::-webkit-scrollbar-thumb { border-radius: 8px; border: 3px solid #fff; background-color: rgba(0, 0, 0, 0.3); }
+section.sales .table-striped { font-size: 12px; letter-spacing: -0.4pt; }
+section.sales .table-striped thead td { cursor: pointer; font-weight: bold; padding: 7px 5px 3px 8px; position: relative; }
+section.sales .table-striped thead td .sort { position: absolute; right: 20px; top: 10px; font-size: 8px; }
+section.sales .table-striped tbody tr:nth-of-type(odd) { background: #4e5d6c; }
+section.sales .table-striped td { padding: 7px 5px 3px 9px; white-space: nowrap; }
+section.sales .table-striped thead tr td:nth-child(1), section.sales .table-striped tbody tr td:nth-child(1) { width: 13%; }
+section.sales .table-striped thead tr td:nth-child(2), section.sales .table-striped tbody tr td:nth-child(2) { width: 50%; padding-left: 2px; }
+section.sales .table-striped thead tr td:nth-child(3), section.sales .table-striped tbody tr td:nth-child(3) { width: 17%; padding-left: 4px; }
+section.sales .table-striped thead tr td:nth-child(4), section.sales .table-striped tbody tr td:nth-child(4) { width: 10%; padding-left: 2px; }
+section.sales .table-striped thead tr td:nth-child(5), section.sales .table-striped tbody tr td:nth-child(5) { width: auto; }
+section.sales .table-striped .edit span.glyphicon { margin-left: 5px; position: relative; cursor: pointer; }
+section.sales .table-striped .edit span.glyphicon span.label.label-default { position: absolute; background: #ebebeb; color: #2E3F4F; top: 10px; left: -30px; font-size: 13px; display: none; width: 50px; height: 24px; font-weight: 400; }
+section.sales .table-striped .edit:hover span { display: inline; }
+section.sales .table-striped .edit > span { display: none; }
+section.sales .table-striped .edit .glyphicon-pencil:hover { color: #73BEDA; }
+section.sales .table-striped .edit .glyphicon-pencil:hover:hover span.label.label-default { display: block; }
+section.sales .table-striped .edit .glyphicon-trash:hover { color: #C96058; }
+section.sales .table-striped .edit .glyphicon-trash:hover:hover span.label.label-default { display: block; }
+section.sales .table-striped .icon-check-empty, section.sales .table-striped .check-empty { font-size: 15px; position: relative; top: 2px; }
+section.sales .table-striped label { margin-left: 21px; }
+section.sales .table-striped input { display: none; }
+section.sales .table-striped input[type=checkbox] + label .icon-check { display: none; }
+section.sales .table-striped input[type=checkbox]:checked + label .icon-check-empty { display: none; }
+section.sales .table-striped input[type=checkbox]:checked + label .icon-check { display: inline-block; }
+
+section.recommend { padding-bottom: 58px; }
+section.recommend .row { padding-top: 12px; }
+section.recommend img { width: 100%; filter: blur(2px); -ms-filter: blur(2px); -webkit-filter: blur(2px); filter: url("data:image/svg+xml;utf9,<svg%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'><filter%20id='blur'><feGaussianBlur%20stdDeviation='3'%20/></filter></svg>#blur"); filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='2'); }
+section.recommend img:hover { filter: none; -ms-filter: none; -webkit-filter: none; }
+
+footer p { padding-top: 17px; font-size: 15px; letter-spacing: -0.1pt; }
+footer p a { color: #df691a; margin-left: 10px; font-size: 14px; }
+
+@media only screen and (max-width: 770px) { .col-xs-6 { width: 25%; }
+  .navbar-brand { margin-left: 0; }
+  .navbar-toggle { display: none; }
+  .navbar-collapse { display: block; }
+  .nav.navbar-nav { float: left; margin: 0; }
+  .nav.navbar-nav li { float: left; }
+  .navbar-right.nav.navbar-nav { float: right; }
+  header .nav li a { padding-left: 8px; padding-right: 8px; }
+  .dropdown-toggle { padding-left: 18px; }
+  section.sales .table-striped thead td .sort { right: 2px; } }
+@media only screen and (max-width: 470px) { footer { display: none; }
+  .col-xs-6 { width: 50%; }
+  .col-xs-12 { padding-bottom: 15px; }
+  .navbar-toggle { display: block; }
+  .table-over { border: 1px solid #4e5d6c; }
+  section.sales .table-striped .edit > span { display: inline; }
+  header { position: relative; }
+  header .navbar-brand { display: block; float: none; }
+  header .navbar-collapse { border: none; display: none; }
+  header .navbar-right.nav.navbar-nav { float: left; }
+  header .navbar-right .dropdown-toggle { padding-right: 33px; padding-left: 10px; }
+  header .nav.navbar-nav { float: left; }
+  header .nav.navbar-nav:after { position: absolute; width: 100%; border-top: 1px solid #5f6d7a; top: 40px; left: 0; }
+  header .nav.navbar-nav li { float: left; } }

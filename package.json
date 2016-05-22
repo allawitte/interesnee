@@ -1,0 +1,19 @@
+{
+  "name": "interesnee",
+  "version": "1.0.0",
+  "description": "Test ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alla Witte",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "compass-mixins": "^0.12.7",
+    "gulp-compass": "^2.1.0",
+    "gulp-simple-compass": "^0.1.1"
+  }
+}

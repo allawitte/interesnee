@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test Page</title>
+    <link rel="stylesheet" media="all" type="text/css" href="theme.css">
+    <link rel="stylesheet" media="all" type="text/css" href="app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <script src="libs.js"></script>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="container">
+        <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6" aria-expanded="false" class="navbar-toggle collapsed"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">Store</a>
+        <div id="bs-example-navbar-collapse-6" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Users</a></li>
+          </ul>
+          <ul class="navbar-right nav navbar-nav">
+            <li>
+              <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle"><i class="fa fa-bell"></i><span class="caret"></span></div>
+              <div class="dropdown-menu"></div>
+            </li>
+            <li>
+              <div data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle"><i class="fa fa-user"></i><span class="caret"></span></div>
+              <ul class="dropdown-menu">
+                            <li><a href="#"> <i class="fa fa-user"></i><span>User Profile</span></a></li>
+                            <li><a href="#"> <i class="fa fa-cog"></i><span>Settings</span></a></li>
+                            <li class="bordered"><a href="#"><i class="glyphicon glyphicon-log-out"></i><span>Log Out</span></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container over">
+      <div class="wrapped">
+        <section class="chart">
+          <h2>Charts</h2>
+          <div class="row chartBloks">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="c100 p10 red"><span>10</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                      <p>Today</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="c100 p75 yellow"><span>75</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                      <p>Week</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="c100 p45 green"><span>45</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                      <p>Month</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                      <div class="c100 p90 blue"><span>90</span>
+                        <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                        </div>
+                      </div>
+                      <p>Year</p>
+                    </div>
+          </div>
+        </section>
+        <section class="sales">
+          <h2>Sales</h2>
+          <div class="table-over">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <td>#
+                    <input type="checkbox" id="main-check">
+                    <label for="main-check" id="check"><i class="icon-check-empty"></i><i class="icon-check"></i></label>
+                  </td>
+                  <td>Product</td>
+                  <td>Category</td>
+                  <td>Price</td>
+                </tr>
+              </thead>
+              <tbody>
+                        <tr>
+                          <td class="checkbx">1
+                            <input type="checkbox" id="id1">
+                            <label for="id1"><i class="icon-check-empty"></i><i class="icon-check"></i></label>
+                          </td>
+                          <td>Bread							</td>
+                          <td>Food							</td>
+                          <td>$1							</td>
+                          <td class="edit"><span class="glyphicon glyphicon-pencil"><span class="label label-default">Edit</span></span><span class="glyphicon glyphicon-trash"><span class="label label-default">Delete</span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="checkbx">2
+                            <input type="checkbox" id="id2">
+                            <label for="id2"><i class="icon-check-empty"></i><i class="icon-check"></i></label>
+                          </td>
+                          <td>Milk							</td>
+                          <td>Food							</td>
+                          <td>$2							</td>
+                          <td class="edit"><span class="glyphicon glyphicon-pencil"><span class="label label-default">Edit</span></span><span class="glyphicon glyphicon-trash"><span class="label label-default">Delete</span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="checkbx">3
+                            <input type="checkbox" id="id3">
+                            <label for="id3"><i class="icon-check-empty"></i><i class="icon-check"></i></label>
+                          </td>
+                          <td>iPhone							</td>
+                          <td>Electronics							</td>
+                          <td>$699							</td>
+                          <td class="edit"><span class="glyphicon glyphicon-pencil"><span class="label label-default">Edit</span></span><span class="glyphicon glyphicon-trash"><span class="label label-default">Delete</span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="checkbx">4
+                            <input type="checkbox" id="id4">
+                            <label for="id4"><i class="icon-check-empty"></i><i class="icon-check"></i></label>
+                          </td>
+                          <td>TV							</td>
+                          <td>Electronics							</td>
+                          <td>$1056							</td>
+                          <td class="edit"><span class="glyphicon glyphicon-pencil"><span class="label label-default">Edit</span></span><span class="glyphicon glyphicon-trash"><span class="label label-default">Delete</span></span></td>
+                        </tr>
+                        <tr>
+                          <td class="checkbx">5
+                            <input type="checkbox" id="id5">
+                            <label for="id5"><i class="icon-check-empty"></i><i class="icon-check"></i></label>
+                          </td>
+                          <td>F.Dostoyevsky &quot;Crime and Punishment&quot;							</td>
+                          <td>Books							</td>
+                          <td>$8							</td>
+                          <td class="edit"><span class="glyphicon glyphicon-pencil"><span class="label label-default">Edit</span></span><span class="glyphicon glyphicon-trash"><span class="label label-default">Delete</span></span></td>
+                        </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section class="recommend">
+          <h2>We Recommend</h2>
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"><img src="http://lorempixel.com/300/300/nature"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12"><img src="http://lorempixel.com/300/300/sports"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12"><img src="http://lorempixel.com/300/300/city"></div>
+          </div>
+        </section>
+        <footer>
+          <p>	&copy;2015<a href="http//:interesnee.ru">interesnee.ru</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

@@ -1,0 +1,26 @@
+doctype html
+- var author = "interesnee.ru"
+- var menuItem = ["Dashboard","Products","Categories","Users"]
+mixin menu(items)
+	each item in items
+		li: a(href="#") #{item}
+- var tabItems = [["Bread","Food","$1"],["Milk","Food","$2"],["iPhone","Electronics","$699"],["TV","Electronics","$1056"],["F.Dostoyevsky 'Cry and Punishment'","$8"]]
+html
+	head
+		title Test Page
+		link(rel="stylesheet", media="all", type="text/css", href="theme.css")
+		link(rel="stylesheet", media="all", type="text/css", href="app.css")
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css')
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css")
+		script(src="libs.js")
+		
+	body
+		include template/header
+		div.container.over
+			div.wrapped
+				include  template/page-1
+				footer
+					p	&copy;2015
+						a(href="http//:interesnee.ru") interesnee.ru
+	script(src="app.js")

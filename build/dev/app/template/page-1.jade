@@ -1,0 +1,57 @@
+-var chart = [[10, "Today","red"], [75, "Week","yellow"], [45, "Month","green"], [90, "Year","blue"]]
+- var tabItems = [["Bread","Food","$1"],["Milk","Food","$2"],["iPhone","Electronics","$699"],["TV","Electronics","$1056"],['F.Dostoyevsky "Crime and Punishment"',"Books","$8"]]
+mixin chartLine(items)
+	each elem, index in items
+		-var cl = "c100 p"+elem[0]+" "+elem[2]
+		div.col-md-3.col-sm-3.col-xs-6
+			div(class=cl)
+				span #{elem[0]}
+				div.slice
+					div.bar
+					div.fill
+			p #{elem[1]}
+mixin table(items)
+	each row, index in items
+				tr
+					td.checkbx #{index+1}
+						-var ident="id"+(index+1)
+						input(type="checkbox" id=ident)
+						label(for=ident)
+							i.icon-check-empty
+							i.icon-check
+					each cell, index1 in row
+						td #{cell}							
+					td.edit
+						span.glyphicon.glyphicon-pencil
+							span.label.label-default Edit
+						span.glyphicon.glyphicon-trash
+							span.label.label-default Delete
+section.chart
+	h2 Charts
+	div.row.chartBloks
+		+chartLine(chart)
+section.sales
+	h2 Sales
+	div.table-over
+		table.table.table-striped
+			thead
+				tr
+					td #
+						input(type="checkbox" id="main-check")
+						label(for="main-check" id="check")
+							i.icon-check-empty
+							i.icon-check
+					td Product
+					td Category
+					td Price
+			tbody
+				+table(tabItems)
+section.recommend
+	h2 We Recommend
+	div.row
+		div.col-md-4.col-sm-4.col-xs-12
+			img(src="http://lorempixel.com/300/300/nature")
+		div.col-md-4.col-sm-4.col-xs-12
+			img(src="http://lorempixel.com/300/300/sports")
+		div.col-md-4.col-sm-4.col-xs-12
+			img(src="http://lorempixel.com/300/300/city")
